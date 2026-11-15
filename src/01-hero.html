@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<title>一口云 · 01 主视觉</title>
+<link rel="stylesheet" href="base.css">
+<style>
+  .hero-img { position: absolute; left: 0; top: 0; width: 2480px; height: 3508px; object-fit: cover; object-position: 50% 42%; }
+  .veil { position: absolute; left: 0; right: 0; top: 2150px; height: 560px;
+    backdrop-filter: blur(3px) brightness(0.82) saturate(0.92);
+    -webkit-mask-image: linear-gradient(to bottom, rgba(0,0,0,0) 0%, #000 26%, #000 74%, rgba(0,0,0,0) 100%);
+    mask-image: linear-gradient(to bottom, rgba(0,0,0,0) 0%, #000 26%, #000 74%, rgba(0,0,0,0) 100%); }
+  .scrim {
+    position: absolute; left: 0; right: 0; bottom: 0; height: 1750px;
+    background: linear-gradient(to bottom,
+      rgba(18,20,19,0) 0%,
+      rgba(18,20,19,0.28) 34%,
+      rgba(18,20,19,0.66) 62%,
+      rgba(14,16,15,0.9) 100%);
+  }
+  .topkicker { position: absolute; left: 180px; top: 150px; color: #e9e3d6; opacity: 0.9; }
+  .index { position: absolute; right: 180px; top: 150px; font-family: "Noto Sans SC", sans-serif;
+           font-size: 40px; letter-spacing: 0.28em; color: #e9e3d6; opacity: 0.85; }
+  .title {
+    position: absolute; left: 176px; top: 2262px; width: 1620px; height: 392px;
+    font-size: 300px; line-height: 1; letter-spacing: 0.09em; color: #f6f2e8;
+    font-weight: 500;
+    text-shadow: 0 2px 30px rgba(0,0,0,0.35);
+  }
+  .rule-w { position: absolute; left: 180px; top: 2230px; width: 620px; height: 2px; background: #f6f2e8; opacity: 0.55; }
+  .subtitle {
+    position: absolute; left: 184px; top: 2740px; width: 1700px; height: 96px;
+    font-size: 66px; line-height: 1.2; letter-spacing: 0.16em; color: #efe9dc; font-weight: 300;
+  }
+  .lead {
+    position: absolute; left: 184px; top: 2884px; width: 1560px; height: 248px;
+    font-size: 46px; line-height: 1.62; letter-spacing: 0.04em; color: #ece6d8;
+  }
+  .footer-hero { color: #cfc7b7; }
+  .footer-hero .right { text-align: right; line-height: 1.5; }
+
+  /* 三段时间轴：云从口里升起＝时间往上走。刻度压在右侧留白，不碰主体。 */
+  .axis { position: absolute; right: 178px; top: 380px; width: 2px; height: 2740px;
+          background: linear-gradient(to bottom, rgba(240,235,224,0.55), rgba(240,235,224,0.12)); }
+  .tick { position: absolute; right: 178px; width: 46px; height: 2px; background: rgba(240,235,224,0.75); }
+  .tlabel { position: absolute; right: 214px; writing-mode: vertical-rl; font-family: "Noto Sans SC", sans-serif;
+            font-size: 33px; letter-spacing: 0.34em; color: rgba(240,235,224,0.78); text-align: right; }
+</style>
+</head>
+<body>
+<div class="sheet">
+  <img class="hero-img" src="../assets/src/hero.png" alt="瓦猫蹲在青瓦屋脊端头，口中涌出云雾">
+  <div class="scrim"></div>
+  <div class="veil"></div>
+
+  <div class="topkicker kicker">望见云首届瓦猫 AI 创作大赛　·　AI 设计赛道　专业组</div>
+  <div class="index">01 / 03</div>
+
+  <div class="rule-w"></div>
+  <div class="axis"></div>
+  <div class="tick" style="top: 380px"></div>
+  <div class="tlabel" style="top: 400px" data-fit data-safe>未来</div>
+  <div class="tick" style="top: 1560px"></div>
+  <div class="tlabel" style="top: 1580px" data-fit data-safe>现在</div>
+  <div class="tick" style="top: 3000px"></div>
+  <div class="tlabel" style="top: 3020px" data-fit data-safe>过去</div>
+
+  <div class="title" data-fit data-safe>一口云</div>
+  <div class="subtitle" data-fit data-safe>瓦猫的过去、现在与未来</div>
+  <div class="lead" data-fit data-safe>
+    它蹲在屋脊的最高处，张着嘴，肚子是空的。<br>
+    一百年来它吞风、吞灾、吞门外的事；<br>
+    如今屋脊换成了天线与云，它跟上去，还是那张嘴。
+  </div>
+
+  <div class="footer footer-hero">
+    <div>作品《一口云》　·　主视觉　·　2480×3508 / 300dpi</div>
+    <div class="right">AI 生成 + 人工排版<br>2026 · 云南</div>
+  </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<title>一口云 · 02 工艺考据</title>
+<link rel="stylesheet" href="base.css">
+<style>
+  .sect { position: absolute; left: 176px; top: 208px; width: 1500px; height: 172px;
+          font-size: 132px; line-height: 1.1; letter-spacing: 0.1em; font-weight: 500; }
+  .lead { position: absolute; left: 180px; top: 436px; width: 1720px; height: 252px;
+          font-size: 44px; line-height: 1.72; color: var(--ink2); letter-spacing: 0.02em; }
+  .mainimg { position: absolute; left: 180px; top: 740px; width: 2120px; height: 1336px; object-fit: cover; }
+  .cap { position: absolute; font-family: "Noto Sans SC", sans-serif; font-size: 25px;
+         color: var(--ink2); letter-spacing: 0.06em; }
+
+  .steps { position: absolute; left: 180px; top: 2160px; width: 2120px; display: flex; gap: 40px; }
+  .step { width: 500px; }
+  .step .n { font-family: "Noto Sans SC", sans-serif; font-size: 27px; letter-spacing: 0.2em; color: var(--clay); }
+  .step .h { font-size: 64px; line-height: 1.25; margin-top: 12px; letter-spacing: 0.08em; }
+  .step .b { font-size: 34px; line-height: 1.7; margin-top: 14px; color: var(--ink2); }
+
+  .tiles { position: absolute; left: 180px; top: 2620px; display: flex; gap: 40px; }
+  .tile { width: 680px; }
+  .tile .box { width: 680px; height: 320px; overflow: hidden; position: relative; }
+  .tile img { width: 680px; height: 320px; object-fit: cover; display: block; }
+  .tile .zoom { transform: scale(2.2); }
+  .tile .t { font-size: 30px; line-height: 1.4; margin-top: 16px; color: var(--ink); letter-spacing: 0.04em; }
+
+  .source { position: absolute; left: 180px; top: 3080px; width: 2120px; height: 96px;
+            font-family: "Noto Sans SC", sans-serif; font-size: 25px; line-height: 1.75;
+            color: var(--ink2); letter-spacing: 0.02em; }
+</style>
+</head>
+<body>
+<div class="sheet">
+  <div class="kicker" style="position:absolute; left:180px; top:150px;">01 / 过去　·　形制与工艺</div>
+
+  <div class="sect" data-fit data-safe>胎 · 火 · 脊</div>
+  <div class="lead" data-fit data-safe data-noimg>
+    鹤庆的瓦猫不是塑像，是瓦。它和屋瓦用同一批泥、进同一座窑；坏了不修，换一片。<br>
+    所以它从来不是一件"作品"，而是房子的一部分——<br>
+    位置、材料、寿命，都跟着房子走。
+  </div>
+
+  <img class="mainimg" src="../assets/src/craft.png" alt="青灰素胎瓦猫与泥料、竹刀、旧瓦">
+  <div class="cap" style="left: 180px; top: 2102px;">素胎未施釉。摄于窑口工作台：泥坯、竹塑刀、红褐陶土粉、旧青瓦。</div>
+  <div class="cap" style="right: 180px; top: 2102px;">02</div>
+
+  <div class="steps" data-noimg>
+    <div class="step">
+      <div class="n">01</div>
+      <div class="h">泥</div>
+      <div class="b" data-fit>青、白、红、黄四色陶土掺和，取的是烧砖瓦的窑泥。不上釉，出窑便是青灰的素胎。</div>
+    </div>
+    <div class="step">
+      <div class="n">02</div>
+      <div class="h">塑</div>
+      <div class="b" data-fit>没有模型，全凭一手捏成。头做得比身子大，嘴开到极限，额上刻一个"王"字。</div>
+    </div>
+    <div class="step">
+      <div class="n">03</div>
+      <div class="h">窑</div>
+      <div class="b" data-fit>装窑时放在最上一层，与砖瓦同烧。鹤庆的老窑，要烧七天七夜。</div>
+    </div>
+    <div class="step">
+      <div class="n">04</div>
+      <div class="h">脊</div>
+      <div class="b" data-fit>安放要请人测方位，面向吉位。它在正脊最高处，背对屋子，朝着外面。</div>
+    </div>
+  </div>
+
+  <div class="tiles">
+    <div class="tile">
+      <div class="box"><img src="../assets/src/craft.png" class="zoom" style="transform-origin: 38% 42%" alt="瓦猫口部细节"></div>
+      <div class="t" data-fit>口 —— 开到极限，舌薄如瓦。</div>
+    </div>
+    <div class="tile">
+      <div class="box"><img src="../assets/src/product.png" class="zoom" style="transform-origin: 47% 52%" alt="中空陶腹内壁的青釉"></div>
+      <div class="t" data-fit>腹 —— 中空，才装得下"吞金屙银"。</div>
+    </div>
+    <div class="tile">
+      <div class="box"><img src="../assets/src/hero.png" style="object-position: 50% 94%" alt="瓦当与屋脊"></div>
+      <div class="t" data-fit>座 —— 以瓦当为座，与屋脊同寿。</div>
+    </div>
+  </div>
+
+  <div class="source" data-fit data-safe data-noimg>
+    形制与工艺据：鹤庆县人民政府《你可能不认识"郜金福"，但一定听过"猫金福"》（2026）；中国农村网《瓦猫 屋脊上的守望者》（2019）；"当代中国"《瓦猫寻踪：屋脊上的非遗》（2026）。剑川一支用红土、柴窑还原烧，出黑陶；本作取鹤庆青灰素胎一路。
+  </div>
+
+  <div class="footer" data-noimg>
+    <div>作品《一口云》　·　02 工艺考据　·　2480×3508 / 300dpi</div>
+    <div>AI 生成 + 人工排版　·　图版为作品示意，非文物摄影</div>
+  </div>
+</div>
+</body>
+</html>

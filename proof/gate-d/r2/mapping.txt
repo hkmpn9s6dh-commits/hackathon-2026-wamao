@@ -1,0 +1,3 @@
+A = A_uptype
+B = B_fullbleed
+C = D

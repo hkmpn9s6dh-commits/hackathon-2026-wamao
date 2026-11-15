@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<title>一口云 · 变体 D（上图上字 + 右缘时间轴）</title>
+<link rel="stylesheet" href="base.css">
+<style>
+  .top { position: absolute; left: 0; top: 0; width: 2480px; height: 2330px; overflow: hidden; }
+  .top img { width: 2480px; height: 3551px; object-fit: cover; object-position: 50% 56%; display: block; margin-top: 0; }
+  .band { position: absolute; left: 0; top: 2330px; width: 2480px; height: 7px; background: var(--vermilion); }
+
+  .k { position: absolute; left: 180px; top: 2408px; }
+  .t { position: absolute; left: 168px; top: 2450px; width: 1720px; height: 380px;
+       font-size: 300px; line-height: 1.05; letter-spacing: 0.06em; font-weight: 500; }
+  .s { position: absolute; left: 180px; top: 2830px; width: 1300px; height: 80px;
+       font-size: 56px; line-height: 1.3; letter-spacing: 0.2em; color: var(--ink2); }
+  .l { position: absolute; left: 180px; top: 2952px; width: 1500px; height: 208px;
+       font-size: 40px; line-height: 1.72; color: var(--ink2); }
+  .meta { position: absolute; right: 180px; top: 2952px; width: 560px; height: 288px;
+          border-left: 1.5px solid var(--rule); padding-left: 32px;
+          font-size: 30px; line-height: 1.85; color: var(--ink2); }
+
+  /* 时间轴：云从口里升起＝时间往上走 */
+  .axis { position: absolute; right: 178px; top: 300px; width: 2px; height: 1760px;
+          background: linear-gradient(to bottom, rgba(240,235,224,0.55), rgba(240,235,224,0.10)); }
+  .tick { position: absolute; right: 178px; width: 44px; height: 2px; background: rgba(240,235,224,0.75); }
+  .tlabel { position: absolute; right: 214px; writing-mode: vertical-rl; font-family: "Noto Sans SC", sans-serif;
+            font-size: 32px; letter-spacing: 0.34em; color: rgba(240,235,224,0.8); }
+</style>
+</head>
+<body>
+<div class="sheet">
+  <div class="top"><img src="../assets/src/hero.png" alt="瓦猫蹲在青瓦屋脊端头，口中涌出云雾"></div>
+  <div class="band"></div>
+
+  <div class="axis"></div>
+  <div class="tick" style="top: 300px"></div>
+  <div class="tlabel" style="top: 320px" data-fit data-safe>未来</div>
+  <div class="tick" style="top: 1180px"></div>
+  <div class="tlabel" style="top: 1200px" data-fit data-safe>现在</div>
+  <div class="tick" style="top: 2060px"></div>
+  <div class="tlabel" style="top: 2080px" data-fit data-safe>过去</div>
+
+  <div class="k kicker">望见云首届瓦猫 AI 创作大赛　·　AI 设计赛道　专业组　·　01 / 03</div>
+  <div class="t" data-fit data-safe>一口云</div>
+  <div class="s" data-fit data-safe>瓦猫的过去、现在与未来</div>
+  <div class="l" data-fit data-safe>
+    它蹲在屋脊的最高处，张着嘴，肚子是空的。<br>
+    一百年来它吞风、吞灾、吞门外的事；<br>
+    如今屋脊换成了天线与云，它跟上去，还是那张嘴。
+  </div>
+  <div class="meta" data-fit data-safe>吞金屙银，是瓦猫的旧说法。<br>腹中空，所以能装；<br>口常开，所以能吞。<br>百年只换过吞下的东西。</div>
+
+  <div class="footer">
+    <div>作品《一口云》　·　主视觉　·　2480×3508 / 300dpi</div>
+    <div>AI 生成 + 人工排版　·　2026 · 云南</div>
+  </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,77 @@
+/* 一口云 · 版式基座
+   A4 @300dpi = 2480×3508。所有尺寸写成 px，按 300dpi 折算 1px≈0.0847mm。
+   字体只用 OFL 开源字体（Noto Serif SC / Noto Sans SC），随包带。 */
+
+@font-face {
+  font-family: "Noto Serif SC";
+  src: url("../assets/fonts/NotoSerifSC-subset.ttf") format("truetype-variations");
+  font-weight: 200 900;
+  font-display: block;
+}
+@font-face {
+  font-family: "Noto Sans SC";
+  src: url("../assets/fonts/NotoSansSC-subset.ttf") format("truetype-variations");
+  font-weight: 100 900;
+  font-display: block;
+}
+
+:root {
+  --paper: #f4f1ea;
+  --ink: #23231f;
+  --ink2: #5a574e;
+  --rule: #c6bfb0;
+  --clay: #a9613c;
+  --indigo: #2c4553;
+  --jade: #6e8c7b;
+  --vermilion: #a63a2b;
+  --bone: #ede7da;
+}
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+html, body {
+  width: 2480px;
+  height: 3508px;
+  background: var(--paper);
+  color: var(--ink);
+  font-family: "Noto Serif SC", serif;
+  -webkit-font-smoothing: antialiased;
+  overflow: hidden;
+}
+
+.sheet { position: relative; width: 2480px; height: 3508px; overflow: hidden; }
+
+/* ---------- 通用元件 ---------- */
+
+.kicker {
+  font-family: "Noto Sans SC", sans-serif;
+  font-weight: 400;
+  font-size: 34px;
+  letter-spacing: 0.22em;
+  color: var(--ink2);
+}
+
+.hair { position: absolute; background: var(--rule); height: 1.5px; }
+.hair-v { position: absolute; background: var(--rule); width: 1.5px; }
+
+.footer {
+  position: absolute;
+  left: 180px; right: 180px; bottom: 130px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  font-family: "Noto Sans SC", sans-serif;
+  font-size: 25px;
+  letter-spacing: 0.08em;
+  color: var(--ink2);
+}
+
+/* 颗粒：把 1024 宽的原图放大到 2480 时压住放大痕迹 */
+.grain {
+  position: absolute; inset: 0;
+  background-image: url("../assets/grain.png");
+  background-repeat: repeat;
+  opacity: 0.055;
+  mix-blend-mode: multiply;
+  pointer-events: none;
+}
