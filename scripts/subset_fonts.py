@@ -35,9 +35,22 @@ missing_all = []
 for src_name, out_name in PAIRS:
     src = FONTS / src_name
     out = FONTS / out_name
+
+    # 全新 clone 里只有子集、没有源字体：那就只核对覆盖，不再生成
     if not src.exists():
-        print(f"✗ 缺源字体 {src_name}")
-        sys.exit(1)
+        if not out.exists():
+            print(f"✗ 源字体与子集都不在：{src_name} / {out_name}")
+            sys.exit(1)
+        f = TTFont(out, lazy=True)
+        cm = set()
+        for t in f["cmap"].tables:
+            cm |= set(t.cmap.keys())
+        miss = sorted(c for c in chars if ord(c) not in cm)
+        if miss:
+            print(f"✗ {out_name} 缺字：{''.join(miss)}")
+            sys.exit(1)
+        print(f"{out_name}: {out.stat().st_size/1024:.0f} KB（源字体不在本仓库，跳过再生成，覆盖核对通过）")
+        continue
 
     # 2) 核对覆盖：源字体里有没有这些字
     font = TTFont(src, lazy=True)
